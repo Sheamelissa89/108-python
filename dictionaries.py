@@ -1,27 +1,34 @@
-# Create a dictionary about a student
-student = {
-    "name": "Shea",
-    "course": "Python",
-    "grade": 95
+# Create a dictionary about a plant
+plant = {
+    "name": "Haworthia",
+    "type": "Succulent",
+    "location": "Balcony",
+    "watering": "Every 2 weeks"
 }
-print("Original dictionary:", student)
-print("Dictionary length:", len(student))
+
+print("Original dictionary:", plant)
+print("Dictionary length:", len(plant))
 
 # Access values using keys
-print("Student name:", student["name"])
-print("Course:", student["course"])
+print("Plant name:", plant["name"])
+print("Location:", plant["location"])
 
 # Add a new key
-student["status"] = "active"
-print("After adding status:", student)
-print("Dictionary length:", len(student))
+plant["status"] = "Blooming"
+print("After adding status:", plant)
+print("Dictionary length:", len(plant))
 
 # Update an existing value
-student["grade"] = 100
-print("After updating grade:", student)
-print("Dictionary length:", len(student))
+plant["location"] = "Kitchen Window"
+print("After updating location:", plant)
+print("Dictionary length:", len(plant))
 
 # Remove a key
-student.pop("status")
-print("After removing status:", student)
-print("Dictionary length:", len(student))
+plant.pop("status")
+print("After removing status:", plant)
+print("Dictionary length:", len(plant))
+
+# Loop through the dictionary
+print("\nPlant Information:")
+for key, value in plant.items():
+    print(f"{key}: {value}")
